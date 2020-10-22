@@ -34,5 +34,13 @@ public class FileConversionController {
 		
 		response.getOutputStream().write(fileBody);		 
 	}
+	
+	@GetMapping("/test")
+	public String  helloWorld() throws Exception{
+		
+		//byte[] fileBody = conversionService.fileConversion(details.getFileName());
+		
+		return "Hello World"; 
+	}
 
 }
